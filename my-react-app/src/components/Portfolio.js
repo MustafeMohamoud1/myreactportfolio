@@ -10,12 +10,12 @@ const ProjectBox = ({ title, imageSrc }) => (
 
 const Portfolio = () => {
   const projects = [
-    { title: 'JB Travel Blog', imageSrc: '/JBTravelBlog.png' },
-    { title: 'Workday Planner', imageSrc: '/WorkdayPlanner.png' },
-    { title: 'Coding Quiz', imageSrc: '/CodingQuiz.png' },
-    { title: 'Password Generator', imageSrc: '/PasswordGenerator.png' },
-    { title: 'Project 5', imageSrc: '/project2.jpg' },
-    { title: 'Project 6', imageSrc: '/project2.jpg' },
+    { title: 'JB Travel Blog', imageSrc: '/JBTravelBlog.png', link: 'https://jbtravelblogfinal-84a20cc94acf.herokuapp.com'},
+    { title: 'Workday Planner', imageSrc: '/WorkdayPlanner.png', link: 'https://mustafemohamoud1.github.io/work-schedule-planner'},
+    { title: 'Coding Quiz', imageSrc: '/CodingQuiz.png', link: 'https://mustafemohamoud1.github.io/my-coding-quiz'},
+    { title: 'Password Generator', imageSrc: '/PasswordGenerator.png', link: 'https://mustafemohamoud1.github.io/mustafe-password-generator'},
+    { title: 'Project 5', imageSrc: '/project2.jpg', link: ''},
+    { title: 'Project 6', imageSrc: '/project2.jpg', link: ''},
   ];
 
   return (
@@ -23,7 +23,12 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="portfolio-container">
         {projects.map((project, index) => (
-          <ProjectBox key={index} title={project.title} imageSrc={project.imageSrc} />
+          <div key={index} className="project-box">
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <img src={project.imageSrc} alt={project.title} />
+              <h3>{project.title}</h3>
+            </a>
+          </div>
         ))}
       </div>
     </div>
