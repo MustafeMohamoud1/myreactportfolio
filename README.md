@@ -1,2 +1,2 @@
 # myreactportfolio
-clone repo and use npm run to open react portfolio
+clone repo and use npm start to open react portfolio
