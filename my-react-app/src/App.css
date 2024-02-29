@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+.project-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
+
+.project-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.navigation {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #61dafb; /* Change color on hover */
+}
