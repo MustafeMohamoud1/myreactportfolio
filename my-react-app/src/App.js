@@ -1,5 +1,5 @@
 import React from 'react';
-import About from './components/AboutMe';
+import AboutMe from './components/AboutMe.js';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
@@ -7,7 +7,7 @@ import Resume from './components/Resume';
 const App = () => {
   return (
     <div>
-      <About />
+      <AboutMe />
       <Portfolio />
       <Contact />
       <Resume />
